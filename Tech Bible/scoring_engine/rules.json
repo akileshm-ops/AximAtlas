@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "weights": {
+    "functionalFit": 0.15,
+    "compatibility": 0.15,
+    "performanceScalability": 0.15,
+    "costEfficiency": 0.15,
+    "reliabilityResilience": 0.10,
+    "operationalSimplicity": 0.10,
+    "futureReadiness": 0.10,
+    "ecosystemAdoption": 0.05,
+    "risk": 0.05
+  },
+  "compatibilityBonus": {
+    "Native": 5,
+    "Official": 4,
+    "Certified": 3,
+    "Community": 2,
+    "Custom": 0,
+    "Unsupported": -10
+  },
+  "completenessBonus": {
+    "100": 10,
+    "90": 8,
+    "80": 6,
+    "70": 4,
+    "below_70": 0
+  },
+  "workloadFitBonus": {
+    "Ideal": 10,
+    "Recommended": 7,
+    "Acceptable": 3,
+    "Poor": -5,
+    "Unsupported": -15
+  },
+  "costPenalty": [
+    { "threshold": 0.05, "deduction": -2 },
+    { "threshold": 0.10, "deduction": -5 },
+    { "threshold": 0.20, "deduction": -10 },
+    { "threshold": 0.30, "deduction": -20 },
+    { "threshold": 0.50, "deduction": -35 }
+  ],
+  "complexityPenalty": {
+    "unnecessaryTech": -2,
+    "duplicatedCapability": -3,
+    "unsupportedDependency": -5,
+    "manualIntegration": -3,
+    "customConnector": -2
+  },
+  "riskPenalty": {
+    "noHA": -5,
+    "noBackup": -5,
+    "noDR": -5,
+    "spof": -8,
+    "highLockIn": -5,
+    "communityUnsupported": -4
+  },
+  "decisionThresholds": {
+    "preferred": { "minOverall": 90, "minConfidence": 80 },
+    "costOptimized": { "minOverall": 85 },
+    "performanceOptimized": { "minPerformance": 90, "latencyCritical": true }
+  }
+}

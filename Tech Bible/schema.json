@@ -1,0 +1,410 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EnterpriseTechnologyIntelligenceSchema",
+  "type": "object",
+  "required": [
+    "identity",
+    "businessOverview",
+    "internalArchitecture",
+    "microservices",
+    "dataFlow",
+    "performance",
+    "workloadIntelligence",
+    "operations",
+    "reliability",
+    "security",
+    "compatibility",
+    "dynamicPricing",
+    "kpis",
+    "pros",
+    "cons",
+    "architecturePatterns",
+    "decisionMatrix",
+    "architecturalConstraints"
+  ],
+  "properties": {
+    "identity": {
+      "type": "object",
+      "required": ["name", "vendor", "website", "license", "category", "subcategory", "deploymentModel", "supportedPlatforms", "supportedClouds", "releaseFrequency", "latestStableVersion", "endOfLife", "openSource", "commercial", "managedServiceAvailability"],
+      "properties": {
+        "name": { "$ref": "#/definitions/verifiedString" },
+        "vendor": { "$ref": "#/definitions/verifiedString" },
+        "website": { "$ref": "#/definitions/verifiedString" },
+        "license": { "$ref": "#/definitions/verifiedString" },
+        "category": { "$ref": "#/definitions/verifiedString" },
+        "subcategory": { "$ref": "#/definitions/verifiedString" },
+        "deploymentModel": { "$ref": "#/definitions/verifiedString" },
+        "supportedPlatforms": { "$ref": "#/definitions/verifiedArray" },
+        "supportedClouds": { "$ref": "#/definitions/verifiedArray" },
+        "releaseFrequency": { "$ref": "#/definitions/verifiedString" },
+        "latestStableVersion": { "$ref": "#/definitions/verifiedString" },
+        "endOfLife": { "$ref": "#/definitions/verifiedString" },
+        "openSource": { "$ref": "#/definitions/verifiedBoolean" },
+        "commercial": { "$ref": "#/definitions/verifiedBoolean" },
+        "managedServiceAvailability": { "$ref": "#/definitions/verifiedBoolean" }
+      }
+    },
+    "businessOverview": {
+      "type": "object",
+      "required": ["primaryPurpose", "businessValue", "typicalEnterpriseUsers", "industries", "adoption", "commonUseCases", "antiPatterns", "idealWorkloads", "poorFitWorkloads"],
+      "properties": {
+        "primaryPurpose": { "$ref": "#/definitions/verifiedString" },
+        "businessValue": { "$ref": "#/definitions/verifiedString" },
+        "typicalEnterpriseUsers": { "$ref": "#/definitions/verifiedArray" },
+        "industries": { "$ref": "#/definitions/verifiedArray" },
+        "adoption": { "$ref": "#/definitions/verifiedString" },
+        "commonUseCases": { "$ref": "#/definitions/verifiedArray" },
+        "antiPatterns": { "$ref": "#/definitions/verifiedArray" },
+        "idealWorkloads": { "$ref": "#/definitions/verifiedArray" },
+        "poorFitWorkloads": { "$ref": "#/definitions/verifiedArray" }
+      }
+    },
+    "internalArchitecture": {
+      "type": "object",
+      "required": ["architectureStyle", "controlPlane", "dataPlane", "coordinator", "workerNodes", "metadataService", "scheduler", "stateStore", "checkpointing", "storageLayer", "executionEngine", "cachingLayer", "networkLayer", "internalApis", "serviceDependencies", "distributedDesign", "consensusMechanism", "partitioning", "replication", "faultIsolation"],
+      "properties": {
+        "architectureStyle": { "$ref": "#/definitions/verifiedString" },
+        "controlPlane": { "$ref": "#/definitions/verifiedString" },
+        "dataPlane": { "$ref": "#/definitions/verifiedString" },
+        "coordinator": { "$ref": "#/definitions/verifiedString" },
+        "workerNodes": { "$ref": "#/definitions/verifiedString" },
+        "metadataService": { "$ref": "#/definitions/verifiedString" },
+        "scheduler": { "$ref": "#/definitions/verifiedString" },
+        "stateStore": { "$ref": "#/definitions/verifiedString" },
+        "checkpointing": { "$ref": "#/definitions/verifiedString" },
+        "storageLayer": { "$ref": "#/definitions/verifiedString" },
+        "executionEngine": { "$ref": "#/definitions/verifiedString" },
+        "cachingLayer": { "$ref": "#/definitions/verifiedString" },
+        "networkLayer": { "$ref": "#/definitions/verifiedString" },
+        "internalApis": { "$ref": "#/definitions/verifiedArray" },
+        "serviceDependencies": { "$ref": "#/definitions/verifiedArray" },
+        "distributedDesign": { "$ref": "#/definitions/verifiedString" },
+        "consensusMechanism": { "$ref": "#/definitions/verifiedString" },
+        "partitioning": { "$ref": "#/definitions/verifiedString" },
+        "replication": { "$ref": "#/definitions/verifiedString" },
+        "faultIsolation": { "$ref": "#/definitions/verifiedString" }
+      }
+    },
+    "microservices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "purpose", "responsibilities", "communication", "protocols", "scalingStrategy", "failureModes", "dependencies", "dataOwnership", "input", "output"],
+        "properties": {
+          "name": { "type": "string" },
+          "purpose": { "$ref": "#/definitions/verifiedString" },
+          "responsibilities": { "$ref": "#/definitions/verifiedArray" },
+          "communication": { "$ref": "#/definitions/verifiedString" },
+          "protocols": { "$ref": "#/definitions/verifiedArray" },
+          "scalingStrategy": { "$ref": "#/definitions/verifiedString" },
+          "failureModes": { "$ref": "#/definitions/verifiedArray" },
+          "dependencies": { "$ref": "#/definitions/verifiedArray" },
+          "dataOwnership": { "$ref": "#/definitions/verifiedString" },
+          "input": { "$ref": "#/definitions/verifiedArray" },
+          "output": { "$ref": "#/definitions/verifiedArray" }
+        }
+      }
+    },
+    "dataFlow": {
+      "type": "object",
+      "required": ["inboundFlow", "outboundFlow", "executionPipeline", "transformationStages", "metadataFlow", "controlFlow", "errorFlow", "retryFlow", "deadLetterHandling", "recovery", "checkpointing", "idempotency", "exactlyOnce", "atLeastOnce", "atMostOnce", "orderingGuarantees"],
+      "properties": {
+        "inboundFlow": { "$ref": "#/definitions/verifiedString" },
+        "outboundFlow": { "$ref": "#/definitions/verifiedString" },
+        "executionPipeline": { "$ref": "#/definitions/verifiedArray" },
+        "transformationStages": { "$ref": "#/definitions/verifiedArray" },
+        "metadataFlow": { "$ref": "#/definitions/verifiedString" },
+        "controlFlow": { "$ref": "#/definitions/verifiedString" },
+        "errorFlow": { "$ref": "#/definitions/verifiedString" },
+        "retryFlow": { "$ref": "#/definitions/verifiedString" },
+        "deadLetterHandling": { "$ref": "#/definitions/verifiedString" },
+        "recovery": { "$ref": "#/definitions/verifiedString" },
+        "checkpointing": { "$ref": "#/definitions/verifiedString" },
+        "idempotency": { "$ref": "#/definitions/verifiedBoolean" },
+        "exactlyOnce": { "$ref": "#/definitions/verifiedBoolean" },
+        "atLeastOnce": { "$ref": "#/definitions/verifiedBoolean" },
+        "atMostOnce": { "$ref": "#/definitions/verifiedBoolean" },
+        "orderingGuarantees": { "$ref": "#/definitions/verifiedString" }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "required": ["latency", "throughput", "concurrency", "parallelism", "autoscaling", "coldStart", "warmStart", "cpuUsage", "memoryUsage", "diskUsage", "networkUsage", "compression", "serialization", "partitionStrategy", "cachingStrategy", "indexingStrategy", "executionModel", "batchPerformance", "streamingPerformance", "queryPerformance", "highAvailability", "benchmarkResults", "maximumDocumentedScale"],
+      "properties": {
+        "latency": { "$ref": "#/definitions/verifiedString" },
+        "throughput": { "$ref": "#/definitions/verifiedString" },
+        "concurrency": { "$ref": "#/definitions/verifiedString" },
+        "parallelism": { "$ref": "#/definitions/verifiedString" },
+        "autoscaling": { "$ref": "#/definitions/verifiedBoolean" },
+        "coldStart": { "$ref": "#/definitions/verifiedString" },
+        "warmStart": { "$ref": "#/definitions/verifiedString" },
+        "cpuUsage": { "$ref": "#/definitions/verifiedString" },
+        "memoryUsage": { "$ref": "#/definitions/verifiedString" },
+        "diskUsage": { "$ref": "#/definitions/verifiedString" },
+        "networkUsage": { "$ref": "#/definitions/verifiedString" },
+        "compression": { "$ref": "#/definitions/verifiedArray" },
+        "serialization": { "$ref": "#/definitions/verifiedArray" },
+        "partitionStrategy": { "$ref": "#/definitions/verifiedString" },
+        "cachingStrategy": { "$ref": "#/definitions/verifiedString" },
+        "indexingStrategy": { "$ref": "#/definitions/verifiedString" },
+        "executionModel": { "$ref": "#/definitions/verifiedString" },
+        "batchPerformance": { "$ref": "#/definitions/verifiedString" },
+        "streamingPerformance": { "$ref": "#/definitions/verifiedString" },
+        "queryPerformance": { "$ref": "#/definitions/verifiedString" },
+        "highAvailability": { "$ref": "#/definitions/verifiedString" },
+        "benchmarkResults": { "$ref": "#/definitions/verifiedArray" },
+        "maximumDocumentedScale": { "$ref": "#/definitions/verifiedString" }
+      }
+    },
+    "workloadIntelligence": {
+      "type": "object",
+      "required": ["oltp", "olap", "streaming", "cdc", "batch", "iot", "ai", "bi", "analytics", "dataScience", "rag", "enterpriseSearch", "customer360", "ma", "fraud", "supplyChain", "marketing", "finance", "healthcare", "manufacturing", "gaming", "media", "government"],
+      "properties": {
+        "oltp": { "$ref": "#/definitions/verifiedScore" },
+        "olap": { "$ref": "#/definitions/verifiedScore" },
+        "streaming": { "$ref": "#/definitions/verifiedScore" },
+        "cdc": { "$ref": "#/definitions/verifiedScore" },
+        "batch": { "$ref": "#/definitions/verifiedScore" },
+        "iot": { "$ref": "#/definitions/verifiedScore" },
+        "ai": { "$ref": "#/definitions/verifiedScore" },
+        "bi": { "$ref": "#/definitions/verifiedScore" },
+        "analytics": { "$ref": "#/definitions/verifiedScore" },
+        "dataScience": { "$ref": "#/definitions/verifiedScore" },
+        "rag": { "$ref": "#/definitions/verifiedScore" },
+        "enterpriseSearch": { "$ref": "#/definitions/verifiedScore" },
+        "customer360": { "$ref": "#/definitions/verifiedScore" },
+        "ma": { "$ref": "#/definitions/verifiedScore" },
+        "fraud": { "$ref": "#/definitions/verifiedScore" },
+        "supplyChain": { "$ref": "#/definitions/verifiedScore" },
+        "marketing": { "$ref": "#/definitions/verifiedScore" },
+        "finance": { "$ref": "#/definitions/verifiedScore" },
+        "healthcare": { "$ref": "#/definitions/verifiedScore" },
+        "manufacturing": { "$ref": "#/definitions/verifiedScore" },
+        "gaming": { "$ref": "#/definitions/verifiedScore" },
+        "media": { "$ref": "#/definitions/verifiedScore" },
+        "government": { "$ref": "#/definitions/verifiedScore" }
+      }
+    },
+    "operations": {
+      "type": "object",
+      "required": ["deploymentComplexity", "maintenanceComplexity", "operationalCost", "monitoring", "observability", "upgradeProcess", "rollback", "backup", "restore", "disasterRecovery", "autoscaling", "incidentResponse", "failureRecovery", "mttr", "mtbf", "rpo", "rto"],
+      "properties": {
+        "deploymentComplexity": { "$ref": "#/definitions/verifiedString" },
+        "maintenanceComplexity": { "$ref": "#/definitions/verifiedString" },
+        "operationalCost": { "$ref": "#/definitions/verifiedString" },
+        "monitoring": { "$ref": "#/definitions/verifiedArray" },
+        "observability": { "$ref": "#/definitions/verifiedArray" },
+        "upgradeProcess": { "$ref": "#/definitions/verifiedString" },
+        "rollback": { "$ref": "#/definitions/verifiedString" },
+        "backup": { "$ref": "#/definitions/verifiedString" },
+        "restore": { "$ref": "#/definitions/verifiedString" },
+        "disasterRecovery": { "$ref": "#/definitions/verifiedString" },
+        "autoscaling": { "$ref": "#/definitions/verifiedString" },
+        "incidentResponse": { "$ref": "#/definitions/verifiedString" },
+        "failureRecovery": { "$ref": "#/definitions/verifiedString" },
+        "mttr": { "$ref": "#/definitions/verifiedString" },
+        "mtbf": { "$ref": "#/definitions/verifiedString" },
+        "rpo": { "$ref": "#/definitions/verifiedString" },
+        "rto": { "$ref": "#/definitions/verifiedString" }
+      }
+    },
+    "reliability": {
+      "type": "object",
+      "required": ["publishedSla", "availability", "faultTolerance", "replication", "leaderElection", "recoveryStrategy", "consistencyModel", "durability", "isolation"],
+      "properties": {
+        "publishedSla": { "$ref": "#/definitions/verifiedString" },
+        "availability": { "$ref": "#/definitions/verifiedString" },
+        "faultTolerance": { "$ref": "#/definitions/verifiedString" },
+        "replication": { "$ref": "#/definitions/verifiedString" },
+        "leaderElection": { "$ref": "#/definitions/verifiedString" },
+        "recoveryStrategy": { "$ref": "#/definitions/verifiedString" },
+        "consistencyModel": { "$ref": "#/definitions/verifiedString" },
+        "durability": { "$ref": "#/definitions/verifiedString" },
+        "isolation": { "$ref": "#/definitions/verifiedString" }
+      }
+    },
+    "security": {
+      "type": "object",
+      "required": ["authentication", "authorization", "rbac", "abac", "encryption", "keyManagement", "auditLogs", "secrets", "identityProviders", "sso", "scim", "mfa", "securityCertifications"],
+      "properties": {
+        "authentication": { "$ref": "#/definitions/verifiedArray" },
+        "authorization": { "$ref": "#/definitions/verifiedArray" },
+        "rbac": { "$ref": "#/definitions/verifiedBoolean" },
+        "abac": { "$ref": "#/definitions/verifiedBoolean" },
+        "encryption": { "$ref": "#/definitions/verifiedString" },
+        "keyManagement": { "$ref": "#/definitions/verifiedString" },
+        "auditLogs": { "$ref": "#/definitions/verifiedBoolean" },
+        "secrets": { "$ref": "#/definitions/verifiedString" },
+        "identityProviders": { "$ref": "#/definitions/verifiedArray" },
+        "sso": { "$ref": "#/definitions/verifiedBoolean" },
+        "scim": { "$ref": "#/definitions/verifiedBoolean" },
+        "mfa": { "$ref": "#/definitions/verifiedBoolean" },
+        "securityCertifications": { "$ref": "#/definitions/verifiedArray" }
+      }
+    },
+    "compatibility": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["targetComponent", "compatibilityPercentage", "nativeSupport", "officialIntegration", "connectorType", "apiSupport", "streamingCompatibility", "batchCompatibility", "operationalComplexity", "migrationComplexity", "vendorSupport", "knownIssues", "performancePenalty", "knownLimitations", "recommendedConfiguration", "unsupportedFeatures"],
+        "properties": {
+          "targetComponent": { "type": "string" },
+          "compatibilityPercentage": { "$ref": "#/definitions/verifiedScore" },
+          "nativeSupport": { "$ref": "#/definitions/verifiedBoolean" },
+          "officialIntegration": { "$ref": "#/definitions/verifiedBoolean" },
+          "connectorType": { "$ref": "#/definitions/verifiedString" },
+          "apiSupport": { "$ref": "#/definitions/verifiedBoolean" },
+          "streamingCompatibility": { "$ref": "#/definitions/verifiedBoolean" },
+          "batchCompatibility": { "$ref": "#/definitions/verifiedBoolean" },
+          "operationalComplexity": { "$ref": "#/definitions/verifiedString" },
+          "migrationComplexity": { "$ref": "#/definitions/verifiedString" },
+          "vendorSupport": { "$ref": "#/definitions/verifiedBoolean" },
+          "knownIssues": { "$ref": "#/definitions/verifiedArray" },
+          "performancePenalty": { "$ref": "#/definitions/verifiedString" },
+          "knownLimitations": { "$ref": "#/definitions/verifiedArray" },
+          "recommendedConfiguration": { "$ref": "#/definitions/verifiedString" },
+          "unsupportedFeatures": { "$ref": "#/definitions/verifiedArray" }
+        }
+      }
+    },
+    "dynamicPricing": {
+      "type": "object",
+      "required": ["pricingModel", "computeCost", "storageCost", "networkCost", "licenseCost", "supportCost", "hiddenCosts", "reservedCapacity", "autoscalingCost", "enterpriseCost", "estimatedTco", "primaryCostDrivers"],
+      "properties": {
+        "pricingModel": { "$ref": "#/definitions/verifiedString" },
+        "computeCost": { "$ref": "#/definitions/verifiedString" },
+        "storageCost": { "$ref": "#/definitions/verifiedString" },
+        "networkCost": { "$ref": "#/definitions/verifiedString" },
+        "licenseCost": { "$ref": "#/definitions/verifiedString" },
+        "supportCost": { "$ref": "#/definitions/verifiedString" },
+        "hiddenCosts": { "$ref": "#/definitions/verifiedArray" },
+        "reservedCapacity": { "$ref": "#/definitions/verifiedBoolean" },
+        "autoscalingCost": { "$ref": "#/definitions/verifiedString" },
+        "enterpriseCost": { "$ref": "#/definitions/verifiedString" },
+        "estimatedTco": { "$ref": "#/definitions/verifiedString" },
+        "primaryCostDrivers": { "$ref": "#/definitions/verifiedArray" }
+      }
+    },
+    "kpis": {
+      "type": "object",
+      "required": ["performanceScore", "scalabilityScore", "reliabilityScore", "compatibilityScore", "costEfficiency", "maintainability", "enterpriseReady", "aiReady", "developerExperience", "communityStrength", "documentationQuality", "vendorStability", "operationalSimplicity", "futureProofing", "overallWeightedScore", "confidenceScore"],
+      "properties": {
+        "performanceScore": { "$ref": "#/definitions/verifiedScore" },
+        "scalabilityScore": { "$ref": "#/definitions/verifiedScore" },
+        "reliabilityScore": { "$ref": "#/definitions/verifiedScore" },
+        "compatibilityScore": { "$ref": "#/definitions/verifiedScore" },
+        "costEfficiency": { "$ref": "#/definitions/verifiedScore" },
+        "maintainability": { "$ref": "#/definitions/verifiedScore" },
+        "enterpriseReady": { "$ref": "#/definitions/verifiedScore" },
+        "aiReady": { "$ref": "#/definitions/verifiedScore" },
+        "developerExperience": { "$ref": "#/definitions/verifiedScore" },
+        "communityStrength": { "$ref": "#/definitions/verifiedScore" },
+        "documentationQuality": { "$ref": "#/definitions/verifiedScore" },
+        "vendorStability": { "$ref": "#/definitions/verifiedScore" },
+        "operationalSimplicity": { "$ref": "#/definitions/verifiedScore" },
+        "futureProofing": { "$ref": "#/definitions/verifiedScore" },
+        "overallWeightedScore": { "$ref": "#/definitions/verifiedScore" },
+        "confidenceScore": { "$ref": "#/definitions/verifiedScore" }
+      }
+    },
+    "pros": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "architecturePatterns": {
+      "type": "object",
+      "required": ["whereItBelongs", "whereItExcels", "whereItShouldNeverBeUsed", "replacementCandidates", "upgradePaths", "migrationPaths", "referenceArchitectures"],
+      "properties": {
+        "whereItBelongs": { "$ref": "#/definitions/verifiedString" },
+        "whereItExcels": { "$ref": "#/definitions/verifiedString" },
+        "whereItShouldNeverBeUsed": { "$ref": "#/definitions/verifiedString" },
+        "replacementCandidates": { "$ref": "#/definitions/verifiedArray" },
+        "upgradePaths": { "$ref": "#/definitions/verifiedArray" },
+        "migrationPaths": { "$ref": "#/definitions/verifiedArray" },
+        "referenceArchitectures": { "$ref": "#/definitions/verifiedArray" }
+      }
+    },
+    "decisionMatrix": {
+      "type": "object",
+      "required": ["readLatencyScore", "writeLatencyScore", "throughputScore", "concurrencyScore", "operationalCostScore", "setupComplexityScore", "maintenanceComplexityScore", "queryComplexityScore", "vectorSearchCapabilityScore", "realTimeStreamingScore"],
+      "properties": {
+        "readLatencyScore": { "$ref": "#/definitions/verifiedScore" },
+        "writeLatencyScore": { "$ref": "#/definitions/verifiedScore" },
+        "throughputScore": { "$ref": "#/definitions/verifiedScore" },
+        "concurrencyScore": { "$ref": "#/definitions/verifiedScore" },
+        "operationalCostScore": { "$ref": "#/definitions/verifiedScore" },
+        "setupComplexityScore": { "$ref": "#/definitions/verifiedScore" },
+        "maintenanceComplexityScore": { "$ref": "#/definitions/verifiedScore" },
+        "queryComplexityScore": { "$ref": "#/definitions/verifiedScore" },
+        "vectorSearchCapabilityScore": { "$ref": "#/definitions/verifiedScore" },
+        "realTimeStreamingScore": { "$ref": "#/definitions/verifiedScore" }
+      }
+    },
+    "architecturalConstraints": {
+      "type": "object",
+      "required": ["maxThroughputLimit", "minLatencyLimit", "maxConcurrencyLimit", "maximumStorageScale", "maxMessagePayloadSize", "schemaRigidity", "consistencyGuarantees"],
+      "properties": {
+        "maxThroughputLimit": { "$ref": "#/definitions/verifiedString" },
+        "minLatencyLimit": { "$ref": "#/definitions/verifiedString" },
+        "maxConcurrencyLimit": { "$ref": "#/definitions/verifiedString" },
+        "maximumStorageScale": { "$ref": "#/definitions/verifiedString" },
+        "maxMessagePayloadSize": { "$ref": "#/definitions/verifiedString" },
+        "schemaRigidity": { "$ref": "#/definitions/verifiedString" },
+        "consistencyGuarantees": { "$ref": "#/definitions/verifiedString" }
+      }
+    }
+  },
+  "definitions": {
+    "verifiedString": {
+      "type": "object",
+      "required": ["value", "source", "lastVerified", "confidenceScore", "verificationStatus"],
+      "properties": {
+        "value": { "type": "string" },
+        "source": { "type": "string" },
+        "lastVerified": { "type": "string" },
+        "confidenceScore": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "verificationStatus": { "type": "string", "enum": ["Verified", "Unverified", "Estimated"] }
+      }
+    },
+    "verifiedBoolean": {
+      "type": "object",
+      "required": ["value", "source", "lastVerified", "confidenceScore", "verificationStatus"],
+      "properties": {
+        "value": { "type": "boolean" },
+        "source": { "type": "string" },
+        "lastVerified": { "type": "string" },
+        "confidenceScore": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "verificationStatus": { "type": "string", "enum": ["Verified", "Unverified", "Estimated"] }
+      }
+    },
+    "verifiedArray": {
+      "type": "object",
+      "required": ["value", "source", "lastVerified", "confidenceScore", "verificationStatus"],
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "source": { "type": "string" },
+        "lastVerified": { "type": "string" },
+        "confidenceScore": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "verificationStatus": { "type": "string", "enum": ["Verified", "Unverified", "Estimated"] }
+      }
+    },
+    "verifiedScore": {
+      "type": "object",
+      "required": ["value", "source", "lastVerified", "confidenceScore", "verificationStatus"],
+      "properties": {
+        "value": { "type": "number", "minimum": 0.0, "maximum": 10.0 },
+        "source": { "type": "string" },
+        "lastVerified": { "type": "string" },
+        "confidenceScore": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "verificationStatus": { "type": "string", "enum": ["Verified", "Unverified", "Estimated"] }
+      }
+    }
+  }
+}

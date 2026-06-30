@@ -1,0 +1,851 @@
+{
+  "nodes": [
+    {
+      "id": "kafka",
+      "label": "Apache Kafka",
+      "type": "component",
+      "categorySubcategory": "Streaming / Messaging",
+      "vendor": "Apache Software Foundation",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "snowflake",
+      "label": "Snowflake",
+      "type": "component",
+      "categorySubcategory": "Databases / Data Warehouses",
+      "vendor": "Snowflake Inc.",
+      "licensing": "Proprietary"
+    },
+    {
+      "id": "airflow",
+      "label": "Apache Airflow",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / Transformation",
+      "vendor": "Apache Software Foundation",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "postgresql",
+      "label": "PostgreSQL",
+      "type": "component",
+      "categorySubcategory": "Databases / Databases",
+      "vendor": "PostgreSQL Global Development Group",
+      "licensing": "PostgreSQL License"
+    },
+    {
+      "id": "mysql",
+      "label": "MySQL",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "oracle_db",
+      "label": "Oracle Database",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "sql_server",
+      "label": "Microsoft SQL Server",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "aurora",
+      "label": "Amazon Aurora",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "spanner",
+      "label": "Google Cloud Spanner",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "cockroachdb",
+      "label": "CockroachDB",
+      "type": "component",
+      "categorySubcategory": "Databases / OLTP",
+      "vendor": "Various Vendors",
+      "licensing": "Open Source / Commercial"
+    },
+    {
+      "id": "duckdb",
+      "label": "DuckDB",
+      "type": "component",
+      "categorySubcategory": "Warehouses / OLAP",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "druid",
+      "label": "Apache Druid",
+      "type": "component",
+      "categorySubcategory": "Warehouses / OLAP",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "pinot",
+      "label": "Apache Pinot",
+      "type": "component",
+      "categorySubcategory": "Warehouses / OLAP",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "bigquery",
+      "label": "Google BigQuery",
+      "type": "component",
+      "categorySubcategory": "Warehouses / OLAP",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "databricks",
+      "label": "Databricks",
+      "type": "component",
+      "categorySubcategory": "Warehouses / Lakehouses",
+      "vendor": "Apache / Linux Foundation",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "delta_lake",
+      "label": "Delta Lake",
+      "type": "component",
+      "categorySubcategory": "Warehouses / Lakehouses",
+      "vendor": "Apache / Linux Foundation",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "iceberg",
+      "label": "Apache Iceberg",
+      "type": "component",
+      "categorySubcategory": "Warehouses / Lakehouses",
+      "vendor": "Apache / Linux Foundation",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "hudi",
+      "label": "Apache Hudi",
+      "type": "component",
+      "categorySubcategory": "Warehouses / Lakehouses",
+      "vendor": "Apache / Linux Foundation",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "mongodb",
+      "label": "MongoDB",
+      "type": "component",
+      "categorySubcategory": "Databases / NoSQL",
+      "vendor": "MongoDB / Apache / Neo4j",
+      "licensing": "Various Licenses"
+    },
+    {
+      "id": "cassandra",
+      "label": "Apache Cassandra",
+      "type": "component",
+      "categorySubcategory": "Databases / NoSQL",
+      "vendor": "MongoDB / Apache / Neo4j",
+      "licensing": "Various Licenses"
+    },
+    {
+      "id": "neo4j",
+      "label": "Neo4j",
+      "type": "component",
+      "categorySubcategory": "Databases / NoSQL",
+      "vendor": "MongoDB / Apache / Neo4j",
+      "licensing": "Various Licenses"
+    },
+    {
+      "id": "pinecone",
+      "label": "Pinecone",
+      "type": "component",
+      "categorySubcategory": "Databases / Vector Database",
+      "vendor": "Various AI Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "qdrant",
+      "label": "Qdrant",
+      "type": "component",
+      "categorySubcategory": "Databases / Vector Database",
+      "vendor": "Various AI Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "pgvector",
+      "label": "pgvector",
+      "type": "component",
+      "categorySubcategory": "Databases / Vector Database",
+      "vendor": "Various AI Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "chroma",
+      "label": "ChromaDB",
+      "type": "component",
+      "categorySubcategory": "Databases / Vector Database",
+      "vendor": "Various AI Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "weaviate",
+      "label": "Weaviate",
+      "type": "component",
+      "categorySubcategory": "Databases / Vector Database",
+      "vendor": "Various AI Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "fivetran",
+      "label": "Fivetran",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Various Ingestion Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "meltano",
+      "label": "Meltano",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Various Ingestion Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "debezium",
+      "label": "Debezium",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Various Ingestion Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "stitch",
+      "label": "Stitch",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Various Ingestion Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "hevo",
+      "label": "Hevo Data",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Various Ingestion Vendors",
+      "licensing": "Apache 2.0 / Proprietary"
+    },
+    {
+      "id": "dbt_core",
+      "label": "dbt Core",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "dbt_cloud",
+      "label": "dbt Cloud",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "sqlmesh",
+      "label": "SQLMesh",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "redpanda",
+      "label": "Redpanda",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "flink",
+      "label": "Apache Flink",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "spark",
+      "label": "Apache Spark",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "rabbitmq",
+      "label": "RabbitMQ",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "pulsar",
+      "label": "Apache Pulsar",
+      "type": "component",
+      "categorySubcategory": "Streaming Systems / Messaging",
+      "vendor": "Apache / CNCF / Various",
+      "licensing": "Apache 2.0 / BSL / Proprietary"
+    },
+    {
+      "id": "prefect",
+      "label": "Prefect",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / Orchestration",
+      "vendor": "Orchestration Vendors",
+      "licensing": "Apache 2.0 / MIT"
+    },
+    {
+      "id": "dagster",
+      "label": "Dagster",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / Orchestration",
+      "vendor": "Orchestration Vendors",
+      "licensing": "Apache 2.0 / MIT"
+    },
+    {
+      "id": "temporal",
+      "label": "Temporal",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / Orchestration",
+      "vendor": "Orchestration Vendors",
+      "licensing": "Apache 2.0 / MIT"
+    },
+    {
+      "id": "unity_catalog",
+      "label": "Unity Catalog",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "openlineage",
+      "label": "OpenLineage",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "datahub",
+      "label": "DataHub",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "atlas",
+      "label": "Apache Atlas",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "prometheus",
+      "label": "Prometheus",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "grafana",
+      "label": "Grafana",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "datadog",
+      "label": "Datadog",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "opentelemetry",
+      "label": "OpenTelemetry",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "tableau",
+      "label": "Tableau",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "looker",
+      "label": "Looker",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "superset",
+      "label": "Apache Superset",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "langchain",
+      "label": "LangChain",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "vllm",
+      "label": "vLLM",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Various",
+      "licensing": "Apache 2.0 / Proprietary / MIT"
+    },
+    {
+      "id": "dbt",
+      "label": "dbt",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / Transformation",
+      "vendor": "dbt Labs",
+      "licensing": "Apache 2.0 (Core) / Proprietary"
+    },
+    {
+      "id": "power_bi",
+      "label": "Power BI",
+      "type": "component",
+      "categorySubcategory": "BI Tools / Reporting",
+      "vendor": "Microsoft",
+      "licensing": "Proprietary"
+    },
+    {
+      "id": "airbyte",
+      "label": "Airbyte",
+      "type": "component",
+      "categorySubcategory": "ETL Tools / ETL Ingestion",
+      "vendor": "Airbyte",
+      "licensing": "ELv2 / Commercial"
+    },
+    {
+      "id": "openmetadata",
+      "label": "OpenMetadata",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "Collate Inc. (backed)",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "redis",
+      "label": "Redis",
+      "type": "component",
+      "categorySubcategory": "Databases / Databases",
+      "vendor": "Redis Ltd.",
+      "licensing": "RSALv2 / SSPLv1"
+    },
+    {
+      "id": "milvus",
+      "label": "Milvus",
+      "type": "component",
+      "categorySubcategory": "Databases / Databases",
+      "vendor": "LF AI & Data Foundation",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "type": "component",
+      "categorySubcategory": "Cloud Services / Infrastructure",
+      "vendor": "CNCF (Cloud Native Computing Foundation)",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "clickhouse",
+      "label": "ClickHouse",
+      "type": "component",
+      "categorySubcategory": "Warehouses / OLAP",
+      "vendor": "ClickHouse, Inc.",
+      "licensing": "Apache 2.0"
+    },
+    {
+      "id": "kafka_flink_iceberg",
+      "label": "Real-time Lakehouse (Kafka + Flink + Iceberg)",
+      "type": "combination",
+      "scalability": "Exceptional",
+      "latency": "Sub-second",
+      "overallScore": 8.9
+    },
+    {
+      "id": "airbyte_dbt_snowflake",
+      "label": "Modern Data Stack (Airbyte + dbt + Snowflake)",
+      "type": "combination",
+      "scalability": "High",
+      "latency": "Minutes to hours",
+      "overallScore": 9.2
+    },
+    {
+      "id": "spark_iceberg_unity_databricks",
+      "label": "Enterprise Lakehouse (Spark + Iceberg + Unity Catalog + Databricks)",
+      "type": "combination",
+      "scalability": "Exceptional",
+      "latency": "Seconds to minutes",
+      "overallScore": 9.0
+    },
+    {
+      "id": "kafka_pgvector_pinecone_langchain_vllm",
+      "label": "Enterprise AI / RAG Stack",
+      "type": "combination",
+      "scalability": "High",
+      "latency": "Sub-second semantic search, low-second LLM output",
+      "overallScore": 8.5
+    },
+    {
+      "id": "airbyte_dbt_duckdb_superset",
+      "label": "Open Source MDS (Airbyte + dbt + DuckDB + Superset)",
+      "type": "combination",
+      "scalability": "Low to Moderate",
+      "latency": "Minutes",
+      "overallScore": 8.7
+    },
+    {
+      "id": "mqtt_kafka_timescaledb_grafana",
+      "label": "IoT and Time-Series Monitoring (MQTT + Kafka + TimescaleDB + Grafana)",
+      "type": "combination",
+      "scalability": "High",
+      "latency": "Low-millisecond",
+      "overallScore": 9.1
+    },
+    {
+      "id": "postgresql_debezium_neo4j_keycloak",
+      "label": "Graph-Enhanced Identity & Customer 360",
+      "type": "combination",
+      "scalability": "High",
+      "latency": "Milliseconds (OLTP), low-second (Graph catch-up)",
+      "overallScore": 8.6
+    },
+    {
+      "id": "spanner_keycloak_vault_prometheus",
+      "label": "Cloud-Native Transactional Stack",
+      "type": "combination",
+      "scalability": "Exceptional",
+      "latency": "Low-millisecond database writes globally",
+      "overallScore": 8.8
+    },
+    {
+      "id": "redpanda_temporal_postgresql_auth0",
+      "label": "Event-Driven Microservices Workflow Stack",
+      "type": "combination",
+      "scalability": "High",
+      "latency": "Low-millisecond messaging, low-second workflow stages",
+      "overallScore": 9.0
+    },
+    {
+      "id": "opentelemetry_prometheus_grafana_clickhouse",
+      "label": "Enterprise Observability (OpenTelemetry + Prometheus + Grafana + ClickHouse)",
+      "type": "combination",
+      "scalability": "Exceptional",
+      "latency": "Real-time metrics, low-second log query times",
+      "overallScore": 9.3
+    }
+  ],
+  "edges": [
+    {
+      "source": "kafka_flink_iceberg",
+      "target": "kafka",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_flink_iceberg",
+      "target": "flink",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_flink_iceberg",
+      "target": "iceberg",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_snowflake",
+      "target": "airbyte",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_snowflake",
+      "target": "dbt",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_snowflake",
+      "target": "snowflake",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "spark_iceberg_unity_databricks",
+      "target": "spark",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "spark_iceberg_unity_databricks",
+      "target": "iceberg",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "spark_iceberg_unity_databricks",
+      "target": "databricks",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_pgvector_pinecone_langchain_vllm",
+      "target": "kafka",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_pgvector_pinecone_langchain_vllm",
+      "target": "pgvector",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_pgvector_pinecone_langchain_vllm",
+      "target": "pinecone",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_pgvector_pinecone_langchain_vllm",
+      "target": "langchain",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "kafka_pgvector_pinecone_langchain_vllm",
+      "target": "vllm",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_duckdb_superset",
+      "target": "airbyte",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_duckdb_superset",
+      "target": "dbt",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_duckdb_superset",
+      "target": "duckdb",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "airbyte_dbt_duckdb_superset",
+      "target": "superset",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "mqtt_kafka_timescaledb_grafana",
+      "target": "kafka",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "mqtt_kafka_timescaledb_grafana",
+      "target": "grafana",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "postgresql_debezium_neo4j_keycloak",
+      "target": "postgresql",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "postgresql_debezium_neo4j_keycloak",
+      "target": "debezium",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "postgresql_debezium_neo4j_keycloak",
+      "target": "neo4j",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "spanner_keycloak_vault_prometheus",
+      "target": "spanner",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "spanner_keycloak_vault_prometheus",
+      "target": "prometheus",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "redpanda_temporal_postgresql_auth0",
+      "target": "redpanda",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "redpanda_temporal_postgresql_auth0",
+      "target": "temporal",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "redpanda_temporal_postgresql_auth0",
+      "target": "postgresql",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "opentelemetry_prometheus_grafana_clickhouse",
+      "target": "opentelemetry",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "opentelemetry_prometheus_grafana_clickhouse",
+      "target": "prometheus",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "opentelemetry_prometheus_grafana_clickhouse",
+      "target": "grafana",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    },
+    {
+      "source": "opentelemetry_prometheus_grafana_clickhouse",
+      "target": "clickhouse",
+      "type": "contains_component",
+      "properties": {
+        "role": "Stack Member Node"
+      }
+    }
+  ],
+  "metadata": {
+    "totalNodes": 73,
+    "totalEdges": 32,
+    "lastUpdated": "2026-06-28"
+  }
+}
